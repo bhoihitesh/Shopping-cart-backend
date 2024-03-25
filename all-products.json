@@ -1,0 +1,82 @@
+ [
+    {
+      "name": "Double Decker Moroccan Veggie Burger",
+      "type": "veg",
+      "category": "burger",
+      "img": "https://imagetolink.com/ib/h68EaPI5ZO.JPG",
+      "discount": "20%",
+      "price": 149
+    },
+    {
+      "name": "Peri Peri Paneer Steak Burger",
+      "type": "veg",
+      "category": "burger",
+      "img": "https://imagetolink.com/ib/59MqsEZntU.JPG",
+      "discount": "20%",
+      "price": 149
+    },
+    {
+      "name": "Double Decker Mexicano Chicken Burger",
+      "type": "non-veg",
+      "category": "burger",
+      "img": "https://imagetolink.com/ib/52qopbLFnc.jpg",
+      "discount": "10%",
+      "price": 149
+    },
+    {
+      "name": "Chilli Garlic Chicken Noodles",
+      "type": "non-veg",
+      "category": "noodle",
+      "img": "https://imagetolink.com/ib/8j70J24tOC.jpg",
+      "discount": "50%",
+      "price": 149
+    },
+    {
+      "name": "Mixed Veg Hakka Noodles",
+      "type": "veg",
+      "category": "noodle",
+      "img": "https://imagetolink.com/ib/cjoR9witBw.JPG",
+      "discount": "35%",
+      "price": 199
+    },
+    {
+      "name": "Dragon Noodles with Dumplings",
+      "type": "veg",
+      "category": "noodle",
+      "img": "https://imagetolink.com/ib/RnH8n8x0bv.jpg",
+      "discount": "50%",
+      "price": 149
+    },
+    {
+      "name": "Pan Asian Egg Chicken Chowmein",
+      "type": "non-veg",
+      "category": "noodle",
+      "img": "https://imagetolink.com/ib/OVFpPhi6Kf.jpg",
+      "discount": "50%",
+      "price": 249
+    },
+    {
+      "name": "Spinach Corn Whole Wheat Sandwich",
+      "type": "veg",
+      "category": "sandwich",
+      "img": "https://imagetolink.com/ib/C3glZ6uOqR.JPG",
+      "discount": "none",
+      "price": 119
+    },
+    {
+      "name": "Homestyle Chicken Whole Wheat Sandwich",
+      "type": "non-veg",
+      "category": "sandwich",
+      "img": "https://imagetolink.com/ib/M6cMbuTMtC.JPG",
+      "discount": "none",
+      "price": 129
+    },
+    {
+      "name": "Homestyle Chicken Whole Wheat Sandwich",
+      "type": "non-veg",
+      "category": "sandwich",
+      "img": "https://imagetolink.com/ib/M6cMbuTMtC.JPG",
+      "discount": "none",
+      "price": 129
+    }
+  ]
