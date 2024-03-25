@@ -14,8 +14,9 @@ app.use(
     credentials: true,
   })
 );
+// mongodb+srv://bhoihitesh1492:$*Hitesh%40123*$@foodhunt.eq6n1ez.mongodb.net/
 // connection with mongodb
-mongoose.connect("mongodb://127.0.0.1:27017/react-shopping-cart", {
+mongoose.connect("mongodb+srv://bhoihitesh1492:$*Hitesh%40123*$@foodhunt.eq6n1ez.mongodb.net/foodhunt", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   serverSelectionTimeoutMS: 30000, // Increase timeout to 30 seconds
