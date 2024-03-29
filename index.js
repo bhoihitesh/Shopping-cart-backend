@@ -11,7 +11,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
     origin: "https://foodhuntshop.netlify.app",
-    credentials: true,
   })
 );
 // mongodb+srv://bhoihitesh1492:$*Hitesh%40123*$@foodhunt.eq6n1ez.mongodb.net/
