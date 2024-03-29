@@ -8,13 +8,13 @@ const cors = require("cors");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 // corse permission from vite project to 5000 server
-app.use(
-  cors({
-    origin: "https://foodhuntshop.onrender.com",
-    credentials: true,
-  })
-);
-// mongodb+srv://bhoihitesh1492:$*Hitesh%40123*$@foodhunt.eq6n1ez.mongodb.net/
+// app.use(
+//   cors({
+//     origin: "https://foodhuntshop.onrender.com",
+//     credentials: true,
+//   })
+// );
+app.use(cors());
 // connection with mongodb
 mongoose.connect(
   "mongodb+srv://bhoihitesh1492:$*Hitesh%40123*$@foodhunt.eq6n1ez.mongodb.net/foodhunt",
