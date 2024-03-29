@@ -10,15 +10,18 @@ app.use(express.urlencoded({ extended: true }));
 // corse permission from vite project to 5000 server
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://foodhuntshop.netlify.app",
     credentials: true,
   })
 );
 // mongodb+srv://bhoihitesh1492:$*Hitesh%40123*$@foodhunt.eq6n1ez.mongodb.net/
 // connection with mongodb
-mongoose.connect("mongodb+srv://bhoihitesh1492:$*Hitesh%40123*$@foodhunt.eq6n1ez.mongodb.net/foodhunt", {
-  serverSelectionTimeoutMS: 30000, // Increase timeout to 30 seconds
-});
+mongoose.connect(
+  "mongodb+srv://bhoihitesh1492:$*Hitesh%40123*$@foodhunt.eq6n1ez.mongodb.net/foodhunt",
+  {
+    serverSelectionTimeoutMS: 30000, // Increase timeout to 30 seconds
+  }
+);
 // Initial route
 app.use("/api", useRoutes);
 
