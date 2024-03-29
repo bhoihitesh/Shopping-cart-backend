@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 // corse permission from vite project to 5000 server
 app.use(
   cors({
-    origin: "https://foodhuntshop.netlify.app",
+    origin: "https://foodhuntshop.onrender.com/",
   })
 );
 // mongodb+srv://bhoihitesh1492:$*Hitesh%40123*$@foodhunt.eq6n1ez.mongodb.net/
