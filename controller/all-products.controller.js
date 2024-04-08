@@ -7,6 +7,13 @@ const getAllProducts = async (req, res) => {
   res.status(200).json({ getProducts });
 };
 
+// get product by id
+const getProductById = async (req, res) => {
+  const productId=req.params.id
+  const getProduct = await products.findById(productId);
+  res.status(200).json({ getProduct });
+};
+
 // get all cart products
 const getAllCartProducts = async (req, res) => {
   const getCartProducts = await cart.find();
@@ -21,13 +28,15 @@ const addProduct = async (req, res) => {
 
 // delete product from cart
 const deleteCartProduct = async (req, res) => {
-  console.log("delete", req.body);
-  const cartProduct = await cart.deleteOne(req.body.item);
+  console.log("delete", req.body.delItemId);
+  const id = req.body.delItemId;
+  const cartProduct = await cart.findByIdAndDelete(id);
   res.status(200).json({ cartProduct });
 };
 
 module.exports = {
   getAllProducts,
+  getProductById,
   addProduct,
   getAllCartProducts,
   deleteCartProduct,

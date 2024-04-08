@@ -7,15 +7,15 @@ const cors = require("cors");
 // middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-// corse permission from vite project to 5000 server
-// app.use(
-//   cors({
-//     origin: "https://foodhuntshop.onrender.com",
-//     credentials: true,
-//   })
-// );
 app.use(cors());
-// connection with mongodb
+// connection with mongodb local database
+// mongoose.connect(
+//   "mongodb://localhost:27017/react-shopping-cart",
+//   {
+//     serverSelectionTimeoutMS: 30000, // Increase timeout to 30 seconds
+//   }
+// );
+// connection with mongodb live database
 mongoose.connect(
   "mongodb+srv://bhoihitesh1492:$*Hitesh%40123*$@foodhunt.eq6n1ez.mongodb.net/foodhunt",
   {
