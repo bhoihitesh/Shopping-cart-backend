@@ -7,7 +7,14 @@ const cors = require("cors");
 // middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
+app.use((req, res, next) => {
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    "https://foodhuntshop.netlify.app"
+  );
+  next();
+});
+// app.use(cors());
 // connection with mongodb local database
 // mongoose.connect(
 //   "mongodb://localhost:27017/react-shopping-cart",
